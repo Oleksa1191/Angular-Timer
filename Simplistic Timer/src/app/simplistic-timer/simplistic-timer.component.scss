@@ -1,0 +1,226 @@
+:host {
+    display: flex;
+    user-select: none;
+  
+    svg {
+      position: relative;
+      width: 100%;
+      height: 100%;
+  
+      z-index: 999;
+  
+      .caption {
+        font-family: "sans-serif";
+        //font-size: 5px;
+        stroke-width: 0.4;
+        color: black;
+      }
+  
+      .number {
+        font-family: "sans-serif";
+        font-size: 7px;
+        color: black;
+      }
+  
+      .clock-face {
+        stroke: #333;
+        fill: white;
+      }
+  
+      .minor {
+        stroke: #999;
+        stroke-width: 0.4;
+      }
+  
+      .major {
+        //stroke: #333;
+        stroke-width: 0.4;
+      }
+  
+      .active {
+        stroke: #d24726
+      }
+  
+      .hour {
+        stroke: #333;
+      }
+  
+      .minute {
+        stroke: #666;
+      }
+      .seconds {
+          stroke: #2cb400;
+      }
+      .second, .second-counterweight {
+        stroke: rgb(180,0,0);
+      }
+  
+      .arrow{
+        fill: rgb(180,0,0);
+      }
+      .arrow-s{
+        fill: #2cb400;
+      }
+  
+      .second-counterweight {
+        stroke-width: 3;
+      }
+    }
+  }
+
+
+
+  
+
+#countdown {
+  position: relative;
+  margin: auto;
+  margin-top: 100px;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+}
+
+#countdown-number {
+  color: #000;
+  display: inline-block;
+  line-height: 40px;
+}
+
+svg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  transform: rotateY(-180deg) rotateZ(-90deg);
+}
+
+svg circle {
+  stroke-dasharray: 237px;
+  stroke-dashoffset: 0px;
+  stroke-linecap: round;
+  stroke-width: 1.3px;
+  stroke: #e1502e;
+  fill: none;
+  animation: countdown 745s linear infinite forwards;
+  stroke-linecap: square;
+  transform: translate(0px, 1px);
+}
+
+@keyframes countdown {
+  from {
+    stroke-dashoffset: 0px;
+  }
+  to {
+    stroke-dashoffset: 320px;
+  }
+}
+
+
+
+.container {
+  color: #333;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  font-weight: normal;
+  letter-spacing: .125rem;
+  text-transform: uppercase;
+}
+
+li {
+  display: inline-block;
+  font-size: 1.5em;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+}
+
+li span {
+  display: block;
+  font-size: 4.5rem;
+}
+
+.message {
+  font-size: 4rem;
+}
+
+#content {
+  display: none;
+  padding: 1rem;
+}
+
+.emoji {
+  padding: 0 .25rem;
+}
+
+@media all and (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  
+  li {
+    font-size: 1.125rem;
+    padding: .75rem;
+  }
+  
+  li span {
+    font-size: 3.375rem;
+  }
+}
+
+
+
+  
+.counter-main {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 40px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  z-index: 9;
+}
+
+
+.border-white {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.border-white:before {
+  position: absolute;
+  content: "";
+  width: 562px;
+  height: 562px;
+  border: 30px solid #fff;
+  z-index: 999999;
+  left: -13px;
+  right: 0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  border-radius: 350px;
+}
+
+
+.clrcle-inner {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 99999;
+}
