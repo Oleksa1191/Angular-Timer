@@ -13,6 +13,7 @@ export class SimplisticTimerComponent implements OnInit {
   deg: any;
   sec: any = 0;
   inter: any;
+  stop=true
   status = 'ready';
   @ViewChild('countdown') counter: CountdownComponent;
   @ViewChild('countdown1') counter1: CountdownComponent;
@@ -42,8 +43,9 @@ export class SimplisticTimerComponent implements OnInit {
        timesUp1(event) {
         if (event.action == "done")
          { 
-       setTimeout(() => this.counter1.restart());
-       this.status = 'restarted';
+           this.stop=false
+      //  setTimeout(() => this.counter1.restart());
+      //  this.status = 'restarted';
           } }
 
   ngOnInit(): void {

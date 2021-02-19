@@ -1,12 +1,12 @@
 <div id="countdown-number" style="width: 900px;
 height: 730px; position: relative;">
 <div class="counter-main">
-<countdown class="first-num" #countdown  [config]="{ leftTime: 600, format: 'mm' }"  (event)="timesUp($event)"></countdown>:
+<countdown class="first-num" #countdown  [config]="{ leftTime: 60, format: 'mm' }"></countdown>:
 <countdown class="second-num" #countdown1  [config]="{leftTime: 60, format: 'ss'}"  (event)="timesUp1($event)"></countdown>
 </div>
 <div class="clrcle-inner">
   <svg viewBox="0 0 100 100">
-    <circle class="circle-main" r="38" cx="50" cy="50">
+    <circle *ngIf="stop" class="circle-main" r="38" cx="50" cy="50">
       
     </circle>
   </svg>

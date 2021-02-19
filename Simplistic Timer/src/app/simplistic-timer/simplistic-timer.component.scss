@@ -103,7 +103,7 @@ svg circle {
   stroke-width: 1.3px;
   stroke: #e1502e;
   fill: none;
-  animation: countdown 745s linear infinite forwards;
+  animation: countdown 75s linear infinite forwards;
   stroke-linecap: square;
   transform: translate(0px, 1px);
 }
@@ -113,7 +113,7 @@ svg circle {
     stroke-dashoffset: 0px;
   }
   to {
-    stroke-dashoffset: 320px;
+    stroke-dashoffset: 285px;
   }
 }
 
