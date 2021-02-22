@@ -28,13 +28,10 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss",
-              "src/assets/css/style.css",
-              "src/assets/css/flipdown/flipdown.css"
+              "src/styles.scss"
+              
             ],
             "scripts": [
-              "src/assets/js/main.js",
-              "src/assets/js/flipdown/flipdown.js"
             ]
           },
           "configurations": {
@@ -97,13 +94,10 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss",
-              "src/assets/css/style.css",
-              "src/assets/css/flipdown/flipdown.css"
+              "src/styles.scss"
+             
             ],
             "scripts": [
-              "src/assets/js/main.js",
-              "src/assets/js/flipdown/flipdown.js"
             ]
           }
         },
