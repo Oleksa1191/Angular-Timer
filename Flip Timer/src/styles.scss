@@ -1,48 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+html,
 body {
-    margin: 30px !important;
-    height: 100% !important;
-    display: flex !important;
-    align-items: inherit !important;
+  height: 100%;
+  padding: 0;
+  margin: 0;
 }
 
-app-root {
-    width: 100%;
+.rotor-group-heading {
+  display: none;
 }
 
+.flipdown .rotor-group:first-child, .flipdown .rotor-group:nth-child(2) {
+  display: none !important;
+}
 
-html {
-    height: 100%;
-  }
-  
-  body {
-    margin: 0px;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    align-content: space-around;
-    overflow: hidden;
-    overflow-x: hidden;
-    
-  }
- 
-  
-  .rotor-group-heading {
-    display: none;
-  }
-  
-  .flipdown .rotor-group:first-child, .flipdown .rotor-group:nth-child(2) {
-    display: none !important;
-  }
-  
-  .flipdown.flipdown__theme-dark .rotor-group:nth-child(n+2):nth-child(-n+3):before, .flipdown.flipdown__theme-dark .rotor-group:nth-child(n+2):nth-child(-n+3):after{
-    display: none;
-  }
-  
-  .flipdown .rotor-group{
-    padding-right: 0px !important;
-  }
+.flipdown.flipdown__theme-dark .rotor-group:nth-child(n+2):nth-child(-n+3):before, .flipdown.flipdown__theme-dark .rotor-group:nth-child(n+2):nth-child(-n+3):after {
+  display: none;
+}
 
+.flipdown .rotor-group {
+  padding-right: 0px !important;
+}
 
 
 //   THEMES
@@ -60,6 +38,7 @@ html {
   color: #FFFFFF;
   background-color: #000;
 }
+
 /* Rotor bottoms */
 .flipdown.flipdown__theme-dark .rotor-bottom,
 .flipdown.flipdown__theme-dark .rotor-leaf-rear {
@@ -95,7 +74,7 @@ html {
   border-radius: 4px;
   font-size: 11rem;
   text-align: center;
-  perspective:200px;
+  perspective: 200px;
 }
 
 .flipdown .rotor:last-child {
@@ -137,7 +116,6 @@ html {
 }
 
 
-
 .flipdown .rotor-leaf-rear {
   line-height: 0px;
   border-radius: 0px 0px 4px 4px;
@@ -162,8 +140,7 @@ html {
 }
 
 
-
-.flipdown .rotor-group{
+.flipdown .rotor-group {
   width: 240px !important;
   background: #000 !important;
   margin-right: 7px !important;
@@ -188,93 +165,93 @@ html {
   border-bottom: 1px solid #e0dfdf;
 }
 
-.flipdown.flipdown__theme-dark{
+.flipdown.flipdown__theme-dark {
   transform: scale(2);
   transition: 0.5s all ease;
   // overflow-x: hidden;
 }
 
 
-@media (max-width:1600px){
-  .flipdown.flipdown__theme-dark{
+@media (max-width: 1600px) {
+  .flipdown.flipdown__theme-dark {
     transform: scale(1.9);
     transition: 0.5s all ease;
-    
+
   }
 }
 
-@media (max-width:1500px){
-  .flipdown.flipdown__theme-dark{
+@media (max-width: 1500px) {
+  .flipdown.flipdown__theme-dark {
     transform: scale(1.7);
     transition: 0.5s all ease;
-    
+
   }
 }
 
-@media (max-width:1400px){
-  .flipdown.flipdown__theme-dark{
+@media (max-width: 1400px) {
+  .flipdown.flipdown__theme-dark {
     transform: scale(1.6);
     transition: 0.5s all ease;
-    
+
   }
 }
 
-@media (max-width:1300px){
-  .flipdown.flipdown__theme-dark{
+@media (max-width: 1300px) {
+  .flipdown.flipdown__theme-dark {
     transform: scale(1.4);
     transition: 0.5s all ease;
-    
+
   }
 }
 
 
-@media (max-width:991px){
-  .flipdown.flipdown__theme-dark{
+@media (max-width: 991px) {
+  .flipdown.flipdown__theme-dark {
     transform: scale(1.2);
     transition: 0.5s all ease;
-    
-  } 
+
+  }
 }
 
-@media (max-width:650px){
-  .flipdown.flipdown__theme-dark{
+@media (max-width: 650px) {
+  .flipdown.flipdown__theme-dark {
     transform: scale(1);
     transition: 0.5s all ease;
-    
-  } 
+
+  }
 }
 
-@media (max-width:600px){
-  .flipdown.flipdown__theme-dark{
+@media (max-width: 600px) {
+  .flipdown.flipdown__theme-dark {
     transform: scale(0.95);
     transition: 0.5s all ease;
-    
-  } 
+
+  }
 }
 
-@media (max-width:567px){
-    .flipdown.flipdown__theme-dark{
-        display: flex;
-    }
-    .flipdown.flipdown__theme-dark{
-      transform: scale(0.80);
-      transition: 0.5s all ease;
-      
-    } 
+@media (max-width: 567px) {
+  .flipdown.flipdown__theme-dark {
+    display: flex;
+  }
+  .flipdown.flipdown__theme-dark {
+    transform: scale(0.80);
+    transition: 0.5s all ease;
+
+  }
 }
 
-@media (max-width:400px){
-  .flipdown.flipdown__theme-dark{
+@media (max-width: 400px) {
+  .flipdown.flipdown__theme-dark {
     transform: scale(0.70);
     transition: 0.5s all ease;
-    
-  } 
+
+  }
 }
 
-@media (max-width:350px){
-  .flipdown.flipdown__theme-dark{
+@media (max-width: 350px) {
+  .flipdown.flipdown__theme-dark {
     transform: scale(0.60);
     transition: 0.5s all ease;
-    
-  } 
+
+  }
 }
