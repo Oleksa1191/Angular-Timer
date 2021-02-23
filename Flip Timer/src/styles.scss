@@ -23,7 +23,7 @@ html {
     align-content: space-around;
     overflow: hidden;
     overflow-x: hidden;
-    transform: scale(1.5);
+    
   }
  
   
@@ -76,6 +76,7 @@ html {
 
 .flipdown .rotor-group:last-child {
   padding-right: 0;
+  margin-right: 0px !important;
 }
 
 .flipdown .rotor-group-heading:before {
@@ -187,17 +188,93 @@ html {
   border-bottom: 1px solid #e0dfdf;
 }
 
+.flipdown.flipdown__theme-dark{
+  transform: scale(2);
+  transition: 0.5s all ease;
+  // overflow-x: hidden;
+}
+
+
+@media (max-width:1600px){
+  .flipdown.flipdown__theme-dark{
+    transform: scale(1.9);
+    transition: 0.5s all ease;
+    
+  }
+}
+
+@media (max-width:1500px){
+  .flipdown.flipdown__theme-dark{
+    transform: scale(1.7);
+    transition: 0.5s all ease;
+    
+  }
+}
+
+@media (max-width:1400px){
+  .flipdown.flipdown__theme-dark{
+    transform: scale(1.6);
+    transition: 0.5s all ease;
+    
+  }
+}
+
+@media (max-width:1300px){
+  .flipdown.flipdown__theme-dark{
+    transform: scale(1.4);
+    transition: 0.5s all ease;
+    
+  }
+}
+
+
 @media (max-width:991px){
-    body{
-        transform: scale(1.1);
-    }
+  .flipdown.flipdown__theme-dark{
+    transform: scale(1.2);
+    transition: 0.5s all ease;
+    
+  } 
+}
+
+@media (max-width:650px){
+  .flipdown.flipdown__theme-dark{
+    transform: scale(1);
+    transition: 0.5s all ease;
+    
+  } 
+}
+
+@media (max-width:600px){
+  .flipdown.flipdown__theme-dark{
+    transform: scale(0.95);
+    transition: 0.5s all ease;
+    
+  } 
 }
 
 @media (max-width:567px){
     .flipdown.flipdown__theme-dark{
         display: flex;
     }
-    body{
-        transform: scale(0.5);
-    }
+    .flipdown.flipdown__theme-dark{
+      transform: scale(0.80);
+      transition: 0.5s all ease;
+      
+    } 
+}
+
+@media (max-width:400px){
+  .flipdown.flipdown__theme-dark{
+    transform: scale(0.70);
+    transition: 0.5s all ease;
+    
+  } 
+}
+
+@media (max-width:350px){
+  .flipdown.flipdown__theme-dark{
+    transform: scale(0.60);
+    transition: 0.5s all ease;
+    
+  } 
 }
