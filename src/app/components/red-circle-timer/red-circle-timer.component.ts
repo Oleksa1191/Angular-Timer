@@ -37,6 +37,11 @@ export class RedCircleTimerComponent implements OnInit {
     else if(this.parentDivDimensions.width < 1000 && this.parentDivDimensions.height < 1000){
       this.viewBoxDimensions = this.svgConfig.fillSmall;
      }
+     //for vertical displays
+     else if(this.parentDivDimensions.width < 500 && this.parentDivDimensions.height < 300){
+       this.viewBoxDimensions = this.svgConfig.fillVertical;
+       // console.log("Pushing phone config")
+     }
   }
 
   tabcheck = false;
@@ -94,7 +99,7 @@ export class RedCircleTimerComponent implements OnInit {
   }
 
   constructor() { }
- 
+
   //show zeros method activates only if seconds < 9 else it stays false
   //turning output to true will show the zeros in the timer
   showZeroes(){
@@ -178,7 +183,7 @@ export class RedCircleTimerComponent implements OnInit {
   //here transformationfactor is found by solving
   //the equation for 0.1522
   GenerateStepSize(input_seconds:number){
-    let scaledseconds = input_seconds - 0.7;
+    let scaledseconds = input_seconds;
     let transformationfactor:number = 0.02029;
     return ((450/scaledseconds) * transformationfactor);
   }
