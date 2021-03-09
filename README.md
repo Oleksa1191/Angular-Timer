@@ -11,8 +11,7 @@ Both timers have different aesthetic styles and are made entirely using typescri
 <p align="center">
   <img src="https://github.com/Oleksa1191/Angular-Timer/blob/master/docs/readme/SimplisticTimer.png" width="500" height="300">
   <img src="https://github.com/Oleksa1191/Angular-Timer/blob/master/docs/readme/RedCircleTimer.png" width="500" height="300">
-</p>
-  
+</p>  
 
 ## Usage
 
@@ -39,3 +38,4 @@ The best way to use the timer component is to put the timer in a `div` of requir
 The timers automatically detect the width and height of their parent div and expand to fit it. In addition to this the underlying scaling function can be added with the required configuration for some specific display dimensions.
 
 Do **not** pass in `width` and `height` to the `timer component` directly. Always set the parent to required dimensions and the timer will scale automatically.
+
